@@ -29,6 +29,9 @@ jobs:
       - name: Build project
         run: npx zudoku build
 
+      - name: Verify if the build directory exists
+        run: ls -al ./dist/Open-API_Lab_2  # Убедитесь, что папка существует и в ней есть файлы
+
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v1  # Это правильно для GitHub Pages
         with:
