@@ -30,9 +30,8 @@ jobs:
         run: npx zudoku build
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-artifact@v3  # исправленный шаг
+        uses: actions/upload-pages-artifact@v1  # исправленная версия
         with:
-          name: pages-artifact
           path: ./dist
 
   deploy:
