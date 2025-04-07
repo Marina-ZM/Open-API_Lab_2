@@ -10,11 +10,11 @@ const config: ZudokuConfig = {
       {
         type: "category",
         label: "Overview",
-        items: ["docs/introduction", "docs/example", "docs/about", "docs/installation", "docs/authorization"],
+        items: ["docs/about", "docs/installation", "docs/authorization"],
       },
     ],
   },
-  redirects: [{ from: "/", to: "/docs/introduction" }],
+  redirects: [{ from: "/", to: "/docs/about" }],
   apis: {
     type: "file",
     input: "./apis/openapi.json",
