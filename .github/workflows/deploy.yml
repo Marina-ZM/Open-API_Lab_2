@@ -30,9 +30,9 @@ jobs:
         run: npx zudoku build
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v1  # Использование правильного действия для Pages
         with:
-          path: ./dist/Open-API_Lab_2  # Путь к вашему проекту
+          path: ./dist/Open-API_Lab_2  # Путь к собранному проекту
 
   deploy:
     needs: build
