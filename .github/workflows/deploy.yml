@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -33,7 +33,7 @@ jobs:
         run: ls -al ./dist/Open-API_Lab_2  # Убедитесь, что папка существует и в ней есть файлы
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v1  # Это правильно для GitHub Pages
+        uses: actions/upload-pages-artifact@v3  # Это правильно для GitHub Pages
         with:
           path: ./dist/Open-API_Lab_2  # Путь к файлам для деплоя на GitHub Pages
 
@@ -50,4 +50,4 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2  # Это действие деплоит файлы на GitHub Pages
+        uses: actions/deploy-pages@v4  # Это действие деплоит файлы на GitHub Pages
